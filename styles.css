@@ -99,7 +99,7 @@ body {
 .image-container {
     width: 100%;
     max-width: 1920px;
-    height: 4000px;
+    height: 550vh;
     overflow: hidden;
     position: absolute;
     top: 0;
