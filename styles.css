@@ -1,0 +1,472 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baby+Gemoy&display=swap');
+
+@font-face {
+    font-family: 'Meilkyway DEMO';
+    src: url('/fonts/Milkyway\ DEMO.ttf') format('opentype'); /* Adjust path if needed */
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'Baby Gemoy', cursive; /* Applying the font */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FE898E;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white; /* Inner text */
+    text-decoration: none;
+    font-size: 22px; /* Increase size for better visibility */
+    font-family: 'Meilkyway DEMO';
+    
+    /* Creates a thick black outline by layering multiple shadows */
+    text-shadow: 
+         2px  2px 0 black,
+         3px  3px 3px rgba(0, 0, 0, 0.4);
+}
+.nav-links a:hover {
+    color: #FE898E;
+    
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media img {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border-color: white 10px solid;
+
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Image Container */
+.image-container {
+    width: 100%;
+    max-width: 1920px;
+    height: 4000px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Lower Section */
+.second-section {
+    width: 100%;
+    max-width: 1080px;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    top: 120vh;
+    border-radius: 10px;
+}
+
+.second-section h1 {
+    font-size: 78px;
+    color: #FC575E;
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-family: 'Meilkyway DEMO';
+    text-shadow: 
+    3px  3px 0 rgb(255, 255, 255),
+    5px 5px 5px rgba(0, 0, 0, 0.5), 
+    5px 5px 5px rgba(0, 0, 0, 0.4), 
+    5px  5px 5px rgba(117, 117, 117, 0.8);
+
+}
+
+.second-section p {
+    font-size: 16px;
+    color: #922427;
+    margin-bottom: 20px;
+    font-family: 'Meilkyway DEMO';
+
+
+}
+/* form container */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 50px;
+    max-width: 500px;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: #FF3A49;
+    color: white;
+    text-align: center;
+
+}
+
+.contact-form input::placeholder {
+    color: white;
+}
+
+
+
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 500px;
+}
+
+/* Left and Right Side */
+.side-left, .side-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Box Styles */
+.box, .center-box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+/* Left Upper Box */
+.left-upper {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.left-upper h2 {
+    margin: 0;
+    font-size: 85px;
+    color: #FC575E;
+    font-family: 'Meilkyway DEMO';
+    text-shadow: 
+    3px  3px 0 rgb(255, 255, 255),
+    5px 5px 5px rgba(0, 0, 0, 0.5), 
+    5px 5px 5px rgba(0, 0, 0, 0.4), 
+    5px  5px 5px rgba(117, 117, 117, 0.8);
+    
+}
+
+.left-upper p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Left Lower Box with Background Image */
+.left-lower {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+.left-lower h3 {
+    font-size: 36px;
+    margin-bottom: 5px;
+    padding-top: 30px ;
+    color: white;
+
+}
+
+.left-lower p {
+    font-size: 16px;
+}
+
+
+/* Center Box with Background Image */
+.center-box {
+    width: 400px;  /* Same size as left lower */
+    height: 400px;
+    background-image: url('/assets/place.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.center-box h3 {
+    max-width: 60%;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Meilkyway DEMO';
+
+}
+
+.center-box p {
+    font-size: 20px;
+    max-width: 70%;
+}
+
+/* Right Lower Box with Background Image */
+
+
+.right-lower {
+    width: 300px;  /* Same size as center box */
+    height: 300px;
+    background-image: url('/assets/place.png'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.right-lower h3 {
+    font-size: 32px;
+    color: white;
+    font-family: 'Meilkyway DEMO';
+
+}
+
+.right-lower p {
+    font-size: 18px;
+    max-width: 60%;
+}
+
+ .side-right-heading h1{
+    font-size: 85px;
+    color: #FC575E;
+    font-family: 'Meilkyway DEMO';
+    text-shadow: 
+    3px  3px 0 rgb(255, 255, 255),
+    5px 5px 5px rgba(0, 0, 0, 0.5), 
+    5px 5px 5px rgba(0, 0, 0, 0.4), 
+    5px  5px 5px rgba(117, 117, 117, 0.8);
+ }
+
+ .left-lower h3{
+
+    font-family: 'Meilkyway DEMO';
+ }
+
+ .left-lower p{
+
+    font-family: 'Meilkyway DEMO';
+ }
+/* Green box section */
+.green-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 200px;
+}
+
+.upper-box, .lower-box {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20px;
+    width: 300px;
+    height: 120px;
+}
+.box img {
+    width: 30px;
+    height: 30px;
+}
+
+.upper-1st, .upper-2nd, .upper-3rd, .upper-4th,
+.lower-1st, .lower-2nd, .lower-3rd, .lower-4th {
+    background-image: url('/assets/tree.png');
+    flex-direction: row;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .second-section{
+        top: 65vh;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .second-section{
+        top: 50vh;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-links a{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        display: none;
+    }
+    
+    .responsive-image {
+        display: block;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .second-section {
+        margin-top: 0;
+        top: 50vh;
+        padding: 20px 10px;
+    }
+    .content-wrapper {
+        margin-top: 200px;
+    }
+    body {
+        background-image: url('/assets/MBG.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        background-position: center;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+   
+    .second-section {
+        margin-top: 0;
+        padding: 15px 10px;
+    }
+    .second-section h1 {
+        font-size: 48px;
+    }
+    .contact-form input {
+        max-width: 100%;
+    }
+    .box, .center-box {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+}
